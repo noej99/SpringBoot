@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// jQuery : 오래된 기술 -> 호환성 고려
+		//		ES6를?
+		// Spring :
+		//		JDK 1.17을?
+				
+		// JavaScript:
+		//		고급언어 - 언어 자체적으로 자동 처리 -> 쉬운
+		//		ESMAScript
+		// ES6(ES2015)
+		//		var -> let(일반)/const(상수)
+		//		function(){}대신 arrow function(화살표함수)
+		//			() => {}
+		
+		const b = 10;
+		// b = 30;
+		alert(b);
+		
+		let a = 10;
+		// let a = 20; // Java처럼
+		alert(a);
+		
+		
+		/* var a = 10;
+		var a = 20; // Java면 에러, Python처럼 처리됨
+		alert(a);
+		
+		var b = 20;
+		function test() {
+			var b = 30;
+		}
+		test();
+		alert(b); */
+		
+		$("button").click(() => {
+			alert("aa");
+		});
+		
+	});
+	
+</script>
+</head>
+<body>
+	<button>버튼</button>
+</body>
+</html>

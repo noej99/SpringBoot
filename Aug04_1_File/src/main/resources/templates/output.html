@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	제목 : [[${nf.title}]]<p>
+	사진파일명 : [[${nf.img}]]<p>
+	기타파일명 : 
+	<div th:each="f : ${nf.etc}">
+		<div th:text="${f}"></div>
+	</div>
+	<hr>
+	<div th:each="f : ${nf.etc}">
+		<a th:href="${'/download/' + f}">다운</a>
+	</div>
+	<img th:src="${'/img/' + nf.img}">
+</body>
+</html>
